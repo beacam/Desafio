@@ -10,11 +10,11 @@
             opacity: 90%;
             font-size: 101%;
         }
-        h1, h2, .paragrafo, .paragrafo2 {
+        h1, h2, .paragrafo, .paragrafo2, h3 {
             margin-left: 30px;
         }
         .paragrafo {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
         .list {
             font-size: 15px;
@@ -39,15 +39,15 @@
         </ul>
         </ul>
     </nav>
-
-    <h1 id="significadoHTML" style="margin-top: 40px;">O que é HTML?</h1>
+    <h1 style="margin-top: 40px;">HTML</h1>
+    <h2 id="significadoHTML" style="margin-top: 20px;">O que é HTML?</h2>
     <p class="paragrafo2">Criada pelo britânico <u><strong>Tim Berners-Lee</strong></u>, o acrônimo <b>HTML</b> significa <mark><i>HiperText Markup Language</i></mark>, traduzindo ao português: <mark><i>Linguagem de Marcação de Hipertexto</i></mark>.  O <b>HTML</b> é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website. Portanto, ele serve para dar significado e organizar as informações de uma página na web. Sem isso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos.</p>
 
     <p class="paragrafo2">Os <b>hipertextos</b> são conjuntos de elementos conectados. Esses podem ser palavras, imagens, vídeos, documento, etc. Quando conectados, formam uma rede de informações que permite a comunicação de dados, organizando conhecimentos e guardando informações.</p>
 
     <p class="paragrafo2">Ao visitar uma página simples na web, você pode perceber que existem diferentes distribuições e tamanhos para títulos, parágrafos, imagens, vídeos e qualquer outro elemento. Essa estrutura é estabelecida através do <b>HTML</b>. No inicio da web, era comum encontrar sites apenas contendo textos e imagens simples, com estrutura básica e sem estilizações. Porém, nos dias atuais, muito dificilmente você encontrará sites que possuam apenas elementos <b>HTML</b>. Portanto, podemos considerar o HTML o <i>“esqueleto”</i> da sua página.</p>
 
-    <p class="paragrafo2"> Imagine então que além do esqueleto, é necessário ter o corpo. Para isso, temos então as linguagens <b>CSS</b> e o <b>JavaScript</b>, que em conjunto com <b>HTML</b>, formam a base para todos os websites atuais. Veremos mais à frente o que significam essas linguagens.</p>
+    <p class="paragrafo2"> Imagine então que além do esqueleto, é necessário ter o corpo. Para isso, temos então as linguagens <b><abbr title="Cascading Style Sheet">CSS</abbr></b> e o <b>JavaScript</b>, que em conjunto com <b>HTML</b>, formam a base para todos os websites atuais. Veremos mais à frente o que significam essas linguagens.</p>
 
     <blockquote style="margin-bottom: 40px; margin-top: 30px; border-left: 1px solid black; padding: 10px;">
     O <b>HTML</b> é o responsável por mostrar ao navegador como um conteúdo deve estar estruturado. No caso, é uma linguagem que pega o conteúdo <i>“cru”</i> e organiza na tela. Sem o <b>HTML</b>, a web seria uma espécie de TXT básico, sem a presença de nenhum link sequer. 
@@ -56,8 +56,8 @@
 
     <hr>
 
-    <h1 id="tags">Algumas tags utilizadas no HTML</h1>
-        <h2>Tag de título</h2>
+    <h2 id="tags">Algumas tags utilizadas no HTML</h2>
+        <h3>Tag de título</h3>
         <p class="paragrafo">As tags de título possuem <b>valor semântico</b>, variando entre seis<sub>6</sub> <b>níveis hierárquicos</b>. Para definir títulos, utilizamos as tags:</p>
         <ul style="display: inline-block; margin-bottom: 40px; margin-left: 30px; border: 3px solid #312f2f; padding: 20px;">
 
@@ -77,18 +77,43 @@
         </ul>
         <hr>
 
-        <h2>Tag de link</h2>
+        <h3>Tag de link</h3>
         <p class='paragrafo' style="margin-bottom: 40px;">A tag de link HTML liga um documento e outro, podendo ser ele de uma mesma página ou de uma página de outro domínio. Realizamos um link quando <del>escrevemos</del> chamamos as tags &#60a&#62&#60&#47a&#62 com o atributo href.</p>
         <hr>
 
-        <h2>Tag de lista</h2>
+        <h3>Tag de lista</h3>
         <p class="paragrafo">Para poder criar uma lista, podemos utilizar uma &#60strong&#62lista ordenada&#60&#47strong&#62, a partir das tags &#60ol&#62&#60&#47ol&#62, ou uma &#60strong&#62lista não ordenada&#60&#47strong&#62, a partir das tags &#60ul&#62&#60/ul&#62. Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags &#60li&#62&#60&#47li&#62.</p>
-        <p class="paragrafo" style="margin-bottom: 40px;"><b>Vejamos os exemplos a seguir:</b></p>
+        <h4 class="paragrafo"><b>Vejamos os exemplos a seguir:</b></h4>
+        <ol style="margin-bottom: 40px;">
+            <li>
+                <h5>Exemplo 1:</h5>
+                <p>
+                &#60p&#62Minha lista ordenada:&#60&#47p&#62 <br>
+                &#60ol&#62<br>
+                  &#60li&#62item 1&#60&#47li&#62<br>
+                  &#60li&#62item 2&#60&#47li&#62<br>
+                  &#60li&#62item 3&#60&#47li&#62<br>
+                &#60&#47ol&#62
+                </p>
+            </li>
+
+            <li>
+                <h5>Exemplo 2:</h5>
+                <p>
+                    &#60p&#62Minha lista não ordenada:&#60&#47p&#62 <br>
+                    &#60ul&#62<br>
+                      &#60li&#62item 1&#60&#47li&#62<br>
+                      &#60li&#62item 2&#60&#47li&#62<br>
+                      &#60li&#62item 3&#60&#47li&#62<br>
+                    &#60&#47ul&#62
+                </p>
+            </li>
+        </ol>
         <hr>
         <footer style="display: flex; justify-content: space-between; width: auto; height: auto;">
-            <address style="margin-left: 30px; padding: 10px;">
-                Escrito por Beatriz Camilly
-            </address>
+            <cite style="margin-left: 30px; padding: 10px;">
+                Site de referência: HomeHost
+            </cite>
             <a href="#inicio" style="text-decoration: none; padding: 10px;">Retornar ao início</a>"
         </footer>
 </body>
